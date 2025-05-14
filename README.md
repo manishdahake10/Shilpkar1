@@ -102,7 +102,7 @@ Distributed under the **MIT License**. See `LICENSE` for details.
 
 ## 📫 Contact
 
-* **GitHub Issues**: [https://github.com/manishdahake10/Shilpkar1]((https://github.com/manishdahake10/Shilpkar1.git))
+* **GitHub Issues**: [https://github.com/manishdahake10/Shilpkar1](https://github.com/manishdahake10/Shilpkar1.git)
 * **Email**: [manishdahake2026@gmail.com](mailto:manishdahake10@gmail.com)
 
 ---
