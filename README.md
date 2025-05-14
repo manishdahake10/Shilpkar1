@@ -18,7 +18,7 @@ A modern interior-design platform built with React and Vite, offering modular co
 1. **Clone** the repository:
 
    ```bash
-   git clone https://github.com/Saurabh-1435/shilpkar.git
+   git clone https://github.com/manishdahake10/shilpkar1.git
    ```
 2. **Install** dependencies:
 
@@ -102,8 +102,8 @@ Distributed under the **MIT License**. See `LICENSE` for details.
 
 ## 📫 Contact
 
-* **GitHub Issues**: [https://github.com/saurabh-1435/shilpkar/issues](https://github.com/Saurabh-1435/shilpkar/issues)
-* **Email**: [saurabhlakhan4545@gmail.com](mailto:saurabhlakhan4545@gmail.com)
+* **GitHub Issues**: [https://github.com/manishdahake10/Shilpkar1]((https://github.com/manishdahake10/Shilpkar1.git))
+* **Email**: [manishdahake2026@gmail.com](mailto:manishdahake10@gmail.com)
 
 ---
 
