@@ -1,0 +1,199 @@
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100vw;
+  background-color: #12100e;
+  color: white;
+  padding: 60px 5%;
+  box-sizing: border-box;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.contact-left {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.contact-left img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  max-height: 600px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.contact-right {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 20px;
+}
+
+.contact-right h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #c3996b;
+}
+
+.subtext {
+  color: #aaa;
+  margin-bottom: 25px;
+  font-size: 0.95rem;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 0.85rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #555;
+  padding: 6px 0;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+}
+
+.contact-form textarea {
+  min-height: 60px;
+  resize: vertical;
+}
+
+.contact-form button {
+  margin-top: 20px;
+  background-color: #d0946c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background 0.3s ease;
+  border-radius: 6px;
+}
+
+.contact-form button:hover {
+  background-color: #c6835b;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contact-info h4 {
+  color: #c3996b;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.contact-info p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.icons i {
+  margin-right: 15px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: white;
+  transition: color 0.3s;
+}
+
+.icons i:hover {
+  color: #c3996b;
+}
+
+/* ========== Responsive Media Queries ========== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 5%;
+  }
+
+  .contact-left {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .contact-right {
+    padding: 0;
+    width: 100%;
+  }
+}
+
+/* Phones */
+@media (max-width: 768px) {
+  .contact-left img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+  }
+
+  .contact-right h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .subtext {
+    text-align: center;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .icons {
+    justify-content: center;
+  }
+}
+
+/* Extra Small Phones */
+@media (max-width: 480px) {
+  .contact-container {
+    padding: 30px 20px;
+  }
+
+  .contact-right h2 {
+    font-size: 1.6rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.95rem;
+  }
+
+  .contact-form button {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .icons i {
+    font-size: 1rem;
+  }
+}

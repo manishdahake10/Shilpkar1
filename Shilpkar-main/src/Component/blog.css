@@ -1,0 +1,158 @@
+.blog-section {
+  text-align: center;
+  background: #111;
+  padding: 60px 20px;
+  width: 100vw;
+}
+
+.blog-title {
+  font-size: 2.2rem;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.outline {
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+  color: black;
+}
+
+.bold {
+  font-weight: bold;
+  color: gray;
+}
+
+.blog-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.blog-card {
+  width: 350px;
+  height: 450px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.blog-card:hover {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.blog-date {
+  position: absolute;
+  top: 80px;
+  left: 20px;
+  font-size: 0.85rem;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 4px 10px;
+  border-radius: 5px;
+}
+
+.blog-heading {
+  position: absolute;
+  bottom: 50px;
+  left: 20px;
+  font-size: 0.8rem;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 6px 10px;
+  border-radius: 5px;
+  white-space: normal;
+  word-wrap: break-word;
+  line-height: 1.4;
+  text-align: left;
+  max-width: 85%;
+}
+
+.read-more {
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.7rem;
+  transition: background 0.3s ease;
+}
+
+.read-more:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ========== Responsive Media Queries ========== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .blog-cards {
+    gap: 20px;
+  }
+
+  .blog-card {
+    width: 300px;
+    height: 420px;
+  }
+
+  .blog-heading {
+    font-size: 1rem;
+  }
+
+  .read-more {
+    font-size: 0.65rem;
+  }
+}
+
+/* Phones */
+@media (max-width: 768px) {
+  .blog-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blog-card {
+    width: 90%;
+    height: 400px;
+  }
+
+  .blog-title {
+    font-size: 1.8rem;
+  }
+}
+
+/* Extra Small Phones */
+@media (max-width: 480px) {
+  .blog-title {
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+  }
+
+  .blog-card {
+    height: 380px;
+  }
+
+  .blog-heading {
+    font-size: 0.95rem;
+  }
+
+  .read-more {
+    font-size: 0.6rem;
+  }
+}

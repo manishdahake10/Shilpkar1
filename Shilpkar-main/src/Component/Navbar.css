@@ -1,0 +1,178 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  width: 100vw;
+  background-color: #12110d;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-container {
+  max-width: 1300px;
+  height: 80px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-text {
+  color: #c3996b;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/* Menu */
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 28px;
+  font-size: 14px;
+}
+
+.nav-menu li {
+  text-align: center;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 400;
+  transition: 0.3s ease;
+}
+
+.nav-menu li a:hover {
+  color: #c3996b;
+}
+
+/* Right Actions */
+.right-actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.search-icon {
+  color: #bbb;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-icon:hover {
+  color: #ffffff;
+}
+
+.quote-btn {
+  background-color: #c3996b;
+  color: #ffffff;
+  padding: 12px 22px;
+  border: none;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.quote-btn:hover {
+  background-color: #b3895d;
+}
+
+/* Hamburger Menu Icon */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+  position: fixed;
+  /* Fixed so it doesn't move */
+  right: 20px;
+  /* Stay in the right corner */
+  top: 20px;
+  z-index: 1100;
+  /* Keep it above everything */
+}
+
+/* ========== Responsive Design ========== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .navbar-container {
+    padding: 0 20px;
+  }
+
+  .nav-menu {
+    gap: 20px;
+  }
+
+  .quote-btn {
+    padding: 10px 18px;
+    font-size: 13px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .navbar {
+    width: 100vw;
+  }
+
+  .navbar-container {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 10px 20px;
+    justify-content: center;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 10px;
+    background-color: #12110d;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .right-actions {
+    margin-top: 10px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .quote-btn {
+    width: 80%;
+    text-align: center;
+  }
+}

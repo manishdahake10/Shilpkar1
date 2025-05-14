@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    width: 100vw;
+    background-color: #111;
+    color: white;
+  }
+  
+  .container {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    overflow-x: hidden;
+  }
+  
+  .image-section {
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    padding: 0 80px;
+    gap: 40px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+  }
+  
+  .image-box {
+    flex: 1;
+    overflow: hidden;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    transition: transform 0.4s ease;
+  }
+  
+  .image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+    border-radius: 12px;
+  }
+  
+  .image-box:hover img {
+    transform: scale(1.08);
+  }
+  
+  .text-box {
+    margin-top: 50px;
+    padding-left: 6px;
+    text-align: left;
+    width: 100%;
+  }
+  
+  .text-box h2 {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #e0e0e0;
+  }
+  
+  .text-box h2 strong {
+    font-weight: bold;
+    color: #fcae7c;
+  }
+  
+  /* ========== Responsive Styling ========== */
+  
+  /* Large Desktops */
+  @media (min-width: 1440px) {
+    .image-section {
+      max-width: 1440px;
+      margin: 0 auto;
+      gap: 50px;
+    }
+  
+    .text-box h2 {
+      font-size: 20px;
+    }
+  }
+  
+  /* Tablets */
+  @media (max-width: 1024px) {
+    .image-section {
+      padding: 0 40px;
+      height: auto;
+      gap: 30px;
+    }
+  
+    .text-box {
+      margin-top: 30px;
+    }
+  
+    .text-box h2 {
+      font-size: 16px;
+    }
+  }
+  
+  /* Phones */
+@media (max-width: 768px) {
+    .image-section {
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 0;
+      gap: 24px;
+      background-color: #111;
+      width: 100%;
+      height: 70vh; /* KEEP the original height */
+    }
+  
+    .image-box {
+      width: 90%; /* Shrinks width for mobile */
+      max-width: 500px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .image-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+  
+    .text-box {
+      margin-top: 20px;
+      padding-left: 0;
+      text-align: center;
+    }
+  
+    .text-box h2 {
+      font-size: 15px;
+    }
+  }
+  
+  /* Extra small phones */
+  @media (max-width: 480px) {
+    .image-section {
+      gap: 16px;
+    }
+  
+    .image-box {
+      width: 95%;
+    }
+  
+    .text-box h2 {
+      font-size: 14px;
+      line-height: 1.4;
+    }
+  }
+      

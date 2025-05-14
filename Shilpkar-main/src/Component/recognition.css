@@ -1,0 +1,121 @@
+.recognition-wrapper {
+  position: relative;
+  background-color: #0f0f0f;
+  background-image: url('https://blakemore-consulting.com/wp-content/uploads/2022/02/footer.jpg');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: cover;
+  color: white;
+  font-family: 'Helvetica Neue', sans-serif;
+  padding: 100px 20px;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.recognition-overlay {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+.recognition-right {
+  width: 50%;
+  background: transparent;
+  padding: 60px 40px;
+  backdrop-filter: blur(4px);
+}
+
+.recognition-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  line-height: 1.3;
+}
+
+.recognition-title .solid {
+  color: white;
+}
+
+.recognition-title .outlined {
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+  text-stroke: 1px white;
+}
+
+.recognition-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.recognition-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px dashed rgba(255, 255, 255, 0.15);
+  padding-top: 12px;
+  font-size: 1rem;
+  flex-wrap: wrap;
+}
+
+.recognition-count {
+  color: #fcae7c;
+  font-weight: bold;
+  width: 60px;
+  min-width: 50px;
+}
+
+.recognition-name {
+  flex: 1;
+  font-weight: 600;
+  margin-left: 16px;
+  color: #f1f1f1;
+}
+
+.recognition-year {
+  color: #bbb;
+  text-align: right;
+  width: 100px;
+  min-width: 80px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .recognition-right {
+    width: 100%;
+    padding: 40px 20px;
+  }
+
+  .recognition-title {
+    font-size: 2rem;
+  }
+
+  .recognition-row {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .recognition-title {
+    font-size: 1.8rem;
+  }
+
+  .recognition-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .recognition-count,
+  .recognition-year {
+    width: auto;
+    min-width: unset;
+  }
+
+  .recognition-name {
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  min-height: 100vh;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),
+    url("../assets/banner.jpg") no-repeat center center;
+  background-size: cover !important;
+  /* Ensures full coverage */
+  background-position: center top;
+  position: relative;
+  color: #fff;
+  overflow: hidden;
+  /* Prevents extra black space */
+}
+
+/* Content Section */
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 180px;
+  text-align: left;
+}
+
+.content h1 {
+  font-size: 60px;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.content span {
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
+  font-size: 70px;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 28px;
+  color: #ddd;
+  margin-bottom: 40px;
+}
+
+.contact-btn {
+  padding: 14px 28px;
+  background-color: transparent;
+  border: 2px solid #e3a07b;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-btn:hover {
+  background-color: #e3a07b;
+  color: #000;
+}
+
+/* ========== Responsive Media Queries ========== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .content {
+    padding-top: 150px;
+  }
+
+  .content h1 {
+    font-size: 46px;
+  }
+
+  .content span {
+    font-size: 55px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .main {
+    background-size: cover !important;
+    background-position: center top;
+    height: 100vh;
+    /* Ensures full coverage */
+  }
+
+  .content {
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 180px;
+    text-align: center;
+  }
+
+  .content h1 {
+    font-size: 34px;
+  }
+
+  .content span {
+    font-size: 40px;
+  }
+
+  .description {
+    font-size: 15px;
+  }
+
+  .contact-btn {
+    padding: 12px 24px;
+    font-size: 15px;
+  }
+}
+
+/* Extra Small Phones */
+@media (max-width: 480px) {
+  .main {
+    background-size: cover !important;
+    background-position: center top;
+    height: 50vh !important;
+    /* Fix for extra black space */
+  }
+
+  .content h1 {
+    font-size: 26px;
+  }
+
+  .content span {
+    font-size: 32px;
+  }
+
+  .description {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .contact-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+
+}
+
+
+body,
+html {
+  overflow-x: hidden;
+  width: 100vw;
+}
